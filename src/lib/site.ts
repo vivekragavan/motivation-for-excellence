@@ -16,7 +16,18 @@ export type Partner = {
   projectTitle: string | null;
   project: string[];
   nurturing?: string[];
+  stories?: Story[];
   images: string[];
+};
+
+export type Story = {
+  title: string;
+  source: string;
+  author: string | null;
+  date: string;
+  url: string;
+  summary: string[];
+  quote?: string;
 };
 
 export type AreaSlug = 'healthcare' | 'education-training' | 'livelihood-enhancement' | 'nurturing-excellence';

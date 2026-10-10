@@ -188,9 +188,7 @@
   "since": "2018",
   "sinceYear": 2018,
   "website": null,
-  "links": [
-   "https://scopeblog.stanford.edu/2024/04/25/perinatal-health-stanford-india-gujarat/"
-  ],
+  "links": [],
   "about": [
    "Teach to Heal is a multi disciplinary group of US and India based health care professionals who volunteer their time and expertise to provide education on evidence based care in the field of maternal and child health. The group was founded by Dr.Nilima Ragavan, Clinical Professor of Pediatrics at Stanford University School of Medicine and includes Neonatologists, Emergency Medicine Physicians, Obstetricians, Maternal Fetal Medicine specialists, Neonatal Nurse Practitioners, Neonatal Transport Specialists, Labor and Delivery Nurses, Respiratory Therapist and Occupational Therapists. The group partners with the Government and with local NGOs in India. Their activities have included state wide didactic conferences and hands on workshops/simulations for pediatricians and obstetricians. The group also provides technical support to Special Newborn Care Units (SNCUs) and Neonatal Intensive Care Units (NICUs) as well as to Labor and Delivery Services while observing and learning about local conditions and practices, evaluating gaps, discussing with local partners, making recommendations and following up to evaluate impact."
   ],
@@ -201,6 +199,21 @@
    "partners/teach-to-heal/2.webp",
    "partners/teach-to-heal/3.webp",
    "partners/teach-to-heal/4.webp"
+  ],
+  "stories": [
+   {
+    "title": "How a cultural exchange from Palo Alto to rural India is advancing perinatal health",
+    "source": "Stanford Medicine Scope",
+    "author": "Laura Hedli",
+    "date": "25 April 2024",
+    "url": "https://med.stanford.edu/news/insights/2024/04/perinatal-health-stanford-india-gujarat.html",
+    "summary": [
+     "Stanford Medicine’s Scope tells the story of Teach to Heal, the educational exchange that neonatologist Dr. Nilima Ragavan began about a decade ago with the Shrimad Rajchandra Hospital and Research Centre (SRHRC) in rural Gujarat. With support from the Government of Gujarat, clinicians in the US and India share evidence-based practice, and Stanford’s Global Child Health Program now recognises SRHRC as a site for pediatric global health rotations.",
+     "In January 2024 a Stanford team of five faculty and a neonatology fellow joined SRHRC’s annual symposium to explore perinatal mental health, long a taboo subject in rural India. Ideas such as “self-care” were reframed around the wellbeing of both mother and baby, and NICU mothers’ accounts of stress and loneliness prompted talk of group support sessions.",
+     "The article also recalls a 2018 project in which the team helped SRHRC set up a dedicated neonatal transport team and van, improving outcomes for babies born outside the hospital, and notes that the work has since grown across Gujarat at the state’s request."
+    ],
+    "quote": "The key for anybody who’s going to do global health work is to collaborate with teams on the ground."
+   }
   ]
  },
  {

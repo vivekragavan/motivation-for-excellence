@@ -114,6 +114,28 @@ const breadcrumb = {
         }
 
         {
+          p.stories?.map((st) => (
+            <figure class="story">
+              <span class="eyebrow">In the news</span>
+              <h2>
+                <a href={st.url} rel="noopener" target="_blank">{st.title}</a>
+              </h2>
+              <p class="byline">
+                {st.source}
+                {st.author && <> · {st.author}</>} · {st.date}
+              </p>
+              <div class="prose">
+                {st.summary.map((t) => <p>{t}</p>)}
+              </div>
+              {st.quote && <blockquote>“{st.quote}”</blockquote>}
+              <a class="btn btn--ghost" href={st.url} rel="noopener" target="_blank">
+                Read the full story on {host(st.url)} <Arrow />
+              </a>
+            </figure>
+          ))
+        }
+
+        {
           p.about.length === 0 && p.project.length === 0 && (
             <p class="lead">A fuller profile of our work with {p.name} is coming soon.</p>
           )
@@ -283,6 +305,40 @@ const breadcrumb = {
     border-radius: var(--radius);
     background: var(--white);
     border-left: 6px solid var(--teal);
+  }
+  .story {
+    display: grid;
+    gap: 16px;
+    justify-items: start;
+    margin: 0;
+    padding: clamp(24px, 4vw, 40px);
+    border-radius: var(--radius);
+    background: var(--white);
+    border-left: 6px solid var(--navy);
+  }
+  .story h2 {
+    font-size: var(--step-2);
+    line-height: 1.25;
+  }
+  .story h2 a {
+    text-decoration: none;
+  }
+  .story h2 a:hover {
+    text-decoration: underline;
+  }
+  .byline {
+    color: var(--muted);
+    font-size: var(--step--1);
+    margin: -8px 0 0;
+  }
+  .story blockquote {
+    margin: 0;
+    padding-left: 16px;
+    border-left: 3px solid var(--teal);
+    font-family: var(--font-display);
+    font-style: italic;
+    font-size: var(--step-1);
+    color: var(--navy);
   }
   .supports h2,
   .about h2,
