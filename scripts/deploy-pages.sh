@@ -1,16 +1,17 @@
 #!/bin/sh
 # Build the GitHub Pages preview and publish it to the gh-pages branch.
-# Live at https://tamannamody.github.io/motivation-for-excellence/
+# Live at https://<owner>.github.io/motivation-for-excellence/, where <owner> owns origin.
 # Usage: sh scripts/deploy-pages.sh
 set -eu
 
 cd "$(dirname "$0")/.."
-SITE_URL=https://tamannamody.github.io BASE_PATH=/motivation-for-excellence npx astro build
+remote=$(git remote get-url origin)
+owner=$(echo "$remote" | sed -E 's#^.*github\.com[:/]([^/]+)/.*$#\1#')
+SITE_URL=https://$owner.github.io BASE_PATH=/motivation-for-excellence npx astro build
 
 # _astro/ starts with an underscore, so Jekyll must be switched off
 touch dist/.nojekyll
 
-remote=$(git remote get-url origin)
 rev=$(git rev-parse --short HEAD)
 tmp=$(mktemp -d)
 cp -R dist/. "$tmp"
